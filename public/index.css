@@ -1,0 +1,97 @@
+body *{
+	display: -webkit-flex;
+	display: flex;
+	padding : 0;
+	box-sizing: border-box;
+	/*margin:0;*/
+}
+
+.myMain{
+	-webkit-flex-wrap : wrap;
+	flex-wrap: wrap;
+	height: :600px;
+	width : 70%;
+	margin: auto;
+}
+@media (max-width: 480px){
+	.myMain{
+		width : 100%;
+	}
+}
+.contentMain{
+	width : 100%;
+	height: 550px;
+}
+.chatMain{
+	/*background-color : lightgreen;*/
+	flex : 3;
+	/*width: 75%;*/
+	border:2px solid #a1a1a1;
+	box-shadow:2px 2px 3px #aaaaaa;
+	border-radius:20px;
+	display: block;
+	overflow-y : auto;
+	/*flex-direction: column;*/
+}
+
+
+.infoMain{
+	/*background-color : lightblue;*/
+	display: block;
+	height: 100%;
+	flex : 1;
+	flex-direction: column;
+}
+
+.infoSystem{
+	/*flex: 1;*/
+	height: 25%;
+	border:2px solid #a1a1a1;
+	border-radius:20px;
+	box-shadow:2px 2px 3px #aaaaaa;
+	display: block;
+}
+.infoSystem div{
+	height: 100%;
+	flex-direction: column-reverse;
+	overflow-y : auto;
+}
+.infoSystem div p{
+	margin : 5px;
+	padding : 5px;
+	padding-bottom: 10px;
+}
+
+.infoUser{
+	/*flex: 3;*/
+	height: 75%;
+	border:2px solid #a1a1a1;
+	border-radius:20px;
+	box-shadow:2px 2px 3px #aaaaaa;
+	flex-direction: column;
+	overflow-y : auto;
+}
+.infoUser p:hover{
+	background-color: grey;
+}
+
+.inputMain{
+	/*background-color: grey;*/
+	width: 100%;
+	height: 50px;
+	margin: 0;
+}
+.inputMain input{
+	margin: 0;
+	width: 75%;
+	border-radius:20px;
+	border:2px solid #a1a1a1;
+	box-shadow:2px 2px 3px #aaaaaa;
+}
+.inputMain button{
+	margin : 0;
+	flex : auto;
+	border-radius:20px;
+	border:2px solid #a1a1a1;
+	box-shadow:2px 2px 3px #aaaaaa;
+}
